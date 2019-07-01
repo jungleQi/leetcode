@@ -1,0 +1,1 @@
+def searchInsert(nums, target):
