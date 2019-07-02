@@ -9,29 +9,29 @@ def searchInsert(nums, target):
             left = mid+1
         else:
             right = mid-1
-    if mid == -1:
+
+    if mid == -1 or nums[mid] != target:
         return [-1,-1]
 
-    print(left,mid)
     #min idx
     minIdx = mid
     while left <= minIdx:
         curmid = (left+minIdx)//2
-        if nums[curmid] == target:
+        if nums[curmid] == target and minIdx != curmid:
             minIdx = curmid
         else:
             left = curmid+1
 
+    #max idx
     maxIdx = mid
     while maxIdx <= right:
-        curmid = (maxIdx+right)//2
-        if nums[curmid] == target:
-            maxIdx == curmid
+        curmid = (maxIdx+right)//2+(maxIdx+right)%2
+        if nums[curmid] == target and maxIdx != curmid:
+            maxIdx = curmid
         else:
             right = curmid-1
-
     return [minIdx, maxIdx]
 
-nums = [1,3,5,6]
-target = 5
+nums = []
+target = 7
 print(searchInsert(nums, target))
