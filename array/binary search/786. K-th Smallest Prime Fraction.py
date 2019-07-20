@@ -10,19 +10,24 @@ def kthSmallestPrimeFraction(A, K):
             while lo<hi:
                 mid = (lo+hi+1)//2
                 #land on bigger between two
-                if AA[mid]/AA[i]<val:
+                if AA[mid]*1.0/AA[i]<val:
                     lo = mid
                 else:
                     hi = mid-1
-            if lo == hi:
-                cnt += lo+1 if A[lo]/A[i] < val else lo
+            if A[lo]*1.0/A[i] < val:
+                cnt += lo + 1
+            else:
+                cnt += lo
+                print(lo, hi, A[lo], A[i])
+            #cnt += lo+1 if A[lo]/A[i] < val else lo
+
         return cnt
 
     lens = len(A)
-    lo = 1/A[-1]
-    hi = (A[-1]-1)/A[-1]
+    lo = 1.0/A[-1]
+    hi = (A[-1]-1.0)/A[-1]
     while hi-lo > err:
-        mid = (hi+lo)/2
+        mid = (hi+lo)/2.0
         cnt = smaller(A, lens, mid)
         #approach to real fraction as many as possible
         if cnt > K-1:
@@ -34,7 +39,7 @@ def kthSmallestPrimeFraction(A, K):
     for i in range(lens):
         p = int(math.floor(A[i]*lo+0.5))
         #print(p, A[i], abs(p/A[i]-lo))
-        if (p < A[i]) and (p in A) and (abs(p/A[i]-lo) < err):
+        if (p < A[i]) and (p in A) and (abs(p*1.0/A[i]-lo) < err):
             return [p,A[i]]
 
     return []
