@@ -7,7 +7,14 @@ binaray search catetory:
 
 
 combination:
-https://leetcode.com/problems/combination-sum-iii/
-https://leetcode.com/problems/combination-sum-iv/
+https://leetcode.com/problems/letter-case-permutation/
+https://leetcode.com/problems/palindrome-partitioning/
+https://leetcode.com/problems/palindrome-partitioning-ii/
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 https://leetcode.com/problems/generate-parentheses/
+https://leetcode.com/problems/word-search/
+https://leetcode.com/problems/word-search-ii/
+https://leetcode.com/problems/unique-paths/
+https://leetcode.com/problems/unique-paths-ii/
+https://leetcode.com/problems/unique-paths-iii/
+https://leetcode.com/problems/sudoku-solver/
