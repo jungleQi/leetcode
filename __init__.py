@@ -7,8 +7,6 @@ binaray search catetory:
 
 
 combination:
-https://leetcode.com/problems/combination-sum/
-https://leetcode.com/problems/combination-sum-ii/
 https://leetcode.com/problems/combination-sum-iii/
 https://leetcode.com/problems/combination-sum-iv/
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/
