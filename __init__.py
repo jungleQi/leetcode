@@ -10,7 +10,6 @@ combination:
 
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 https://leetcode.com/problems/generate-parentheses/
-https://leetcode.com/problems/word-search-ii/
 https://leetcode.com/problems/unique-paths/
 https://leetcode.com/problems/unique-paths-ii/
 https://leetcode.com/problems/unique-paths-iii/
