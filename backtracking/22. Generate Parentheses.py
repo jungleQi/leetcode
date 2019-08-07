@@ -15,6 +15,3 @@ def generateParenthesis(n):
     return solutions
 
 print generateParenthesis(3)
-
-#调用栈近似tree，每个node认为是累积的当前路径的当前结果
-#backtracking：当前调用分支 返回 到上一层调用，重新遍历父节点(同一level)其他路径的情况
