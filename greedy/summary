@@ -1,4 +1,3 @@
-https://leetcode.com/problems/advantage-shuffle/
 https://leetcode.com/problems/boats-to-save-people/
 https://leetcode.com/problems/car-pooling/
 https://leetcode.com/problems/queue-reconstruction-by-height/
@@ -21,7 +20,7 @@ https://leetcode.com/problems/patching-array/
 虽然每一步上都要保证能获得局部最优解，但由此产生的全局解有时不一定是最优的，所以贪婪法不要回溯.
 
 贪婪算法是一种改进了的分级处理方法。
-其核心是根据题意选取一种量度标准。然后将这多个输入排成这种量度标准所要求的顺序，
+其核心是： 根据题意选取一种量度标准。然后将这多个输入排成这种量度标准所要求的顺序，
 按这种顺序一次输入一个量。
 
 如果这个输入和当前已构成在这种量度意义下的部分最佳解加在一起不能产生一个可行解，则不把此输入加到这部分解中。
