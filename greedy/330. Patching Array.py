@@ -1,21 +1,20 @@
 def minPatches(nums, n):
-    padding = []
+    ret = 0
     N = len(nums)
-    i, val = 0, 1
-    while val <= n:
-        if i>= N or val < nums[i]:
-            padding.append(val)
-            i += 1
-            val = sum(nums[:i]) + sum(padding)
+    i, reach, curSum = 0, 1, 0
+    while reach <= n:
+        if i >= N or reach < nums[i]:
+            ret += 1
+            curSum += reach
+            reach = curSum+1
         else:
-            if sum(nums[:i]) + sum(padding) < val:
-                i += 1
-            else:
-                val += 1
-        print(val,i, padding)
+            curSum += nums[i]
+            if curSum >= reach:
+                reach = curSum+1
+            i = i + 1
 
-    return len(padding)
+    return ret
 
-nums = [1,3]
-n = 6
+nums = [1,2,2]
+n = 5
 print minPatches(nums, n)
