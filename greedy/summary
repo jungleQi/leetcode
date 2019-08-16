@@ -2,7 +2,6 @@ https://leetcode.com/problems/score-after-flipping-matrix/
 https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
 https://leetcode.com/problems/couples-holding-hands/
 https://leetcode.com/problems/jump-game-ii/
-https://leetcode.com/problems/candy/
 
 
 用贪婪法设计算法的特点是一步一步地进行，常以当前情况为基础根据某个优化测度作最优选择，而不考虑各种可能的整体情况，
