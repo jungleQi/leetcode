@@ -1,3 +1,5 @@
-https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/
-https://leetcode.com/problems/grumpy-bookstore-owner/
-https://leetcode.com/problems/find-all-anagrams-in-a-string/
+sliding window:
+1. solid size window
+2. vary size window
+
+common: Counter/required count/formed count/left idx + right idx
